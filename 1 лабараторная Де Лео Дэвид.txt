@@ -1,0 +1,72 @@
+#include <iostream>
+#include <limits>
+#include <bitset>
+
+using namespace std;
+
+int main()
+{
+    // Задание 1
+    cout << "Задание 1" << '\n';
+    cout << "ФИО, номер группы: " << "Де Лео Дэвид Даниель, 221-351"<< '\n';
+    //Задание 2 
+    cout << "Задание 2" << '\n';
+    cout 
+    << "min int = " << std:: numeric_limits<int>::min() << '\n'
+    << "max int = " << std:: numeric_limits<int>::max() << '\n'
+    << "size of int = " << sizeof(int) << '\n'
+    << "min unsigned int = " << std:: numeric_limits<unsigned int>::min() << '\n'
+    << "max unsigned int = " << std:: numeric_limits<unsigned int>::max() << '\n'
+    << "size of unsigned int = " << sizeof(unsigned int) << '\n'
+    << "min short = " << std:: numeric_limits<short>::min() << '\n'
+    << "max short = " << std:: numeric_limits<short>::max() << '\n'
+    << "size of short = " << sizeof(short) << '\n'
+    << "min unsigned short = " << std:: numeric_limits<unsigned short>::min() << '\n'
+    << "max unsigned short = " << std:: numeric_limits<unsigned short>::max() << '\n'
+    << "size of unsigned short = " << sizeof(unsigned short) << '\n'
+    << "min long = " << std:: numeric_limits<long>::min() << '\n'
+    << "max long = " << std:: numeric_limits<long>::max() << '\n'
+    << "size of long = " << sizeof(long) << '\n'
+    << "min long long = " << std:: numeric_limits<long long>::min() << '\n'
+    << "max long long = " << std:: numeric_limits<long long>::max() << '\n'
+    << "size of long long = " << sizeof(long long) << '\n'
+    << "min double = " << std:: numeric_limits<double>::min() << '\n'
+    << "max double = " << std:: numeric_limits<double>::max() << '\n'
+    << "size of double = " << sizeof(double) << '\n'
+    << "min char = " << (int)std:: numeric_limits<char>::min() << '\n'
+    << "max char = " << (int)std:: numeric_limits<char>::max() << '\n'
+    << "size of char = " << sizeof(char) << '\n'
+    << "min bool = " << std:: numeric_limits<bool>::min() << '\n'
+    << "max bool = " << std:: numeric_limits<bool>::max() << '\n'
+    << "size of bool = " << sizeof(bool) << '\n';
+    // Задание 3 
+    cout << "Задание 3" << '\n';
+    int x;
+    cout << "Введите число: ";
+    cin >> x;
+    cout << '\n';
+    cout << "Число в бинарном виде: " << std:: bitset<8*sizeof(x)>(x) << '\n'
+    << "Число в шестнадцатиричном виде: " << std::hex << x << '\n'
+    << "bool: " << bool(x) << '\n'
+    <<"double: " << double(x) << '\n'
+    << "char: " << char(x) << '\n';
+    // Задание 4 
+    cout << "Задание 4" << '\n';
+    double a, b;
+    cout << "Введите коэффициенты: ";
+    cin >> a >> b;
+    cout << a << " * x =" << b << '\n';
+    cout << "x = " << b << " / " << a << '\n';
+    if (a != 0) {
+        cout << "x = " << b / a << '\n';
+    } else {
+        cout << "Деление на 0 невозможно" << '\n';
+    }
+    // Задание 5 
+    cout << "Задание 5" << '\n';
+    int k, h;
+    cout << "Введите координаты отрезка на прямой: ";
+    cin >> k >> h;
+    cout <<"Середина отрезка находится в точке с координатой " << (k + h) / 2;
+    return 0;
+}
