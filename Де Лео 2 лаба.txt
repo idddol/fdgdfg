@@ -19,6 +19,7 @@ void task1()
 void task2()
 {
 	int n;
+	cout << "Enter number n: ";
 	cin >> n;
 	long double c = n;
 	for (int k = 1; k <= n; k++)
@@ -33,6 +34,7 @@ void task2()
 void task3()
 {
 	int s = 0, k = 0, n; 
+	cout << "Enter number n: ";
 	cin >> n;
 	while (n != 0) {
 		s += n;
