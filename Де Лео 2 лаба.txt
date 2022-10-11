@@ -15,7 +15,15 @@ void task1()
 		cout << "\n";
 	}
 }
-
+int fact(int n){
+    int r = 1;
+    for (r = 1;n > 0;--n)  
+         r *= n;
+    return r;
+}
+int binom(int n,int k){
+    return fact(n) / (fact(n-k) * fact(k));
+}
 void task2()
 {
 	int n;
@@ -24,9 +32,7 @@ void task2()
 	long double c = n;
 	for (int k = 1; k <= n; k++)
 	{
-		cout << c << " ";
-		c *= (n - k);
-		c /= (k + 1);
+		cout << binom(n, k) << " ";
 	}
 	cout << endl;
 }
