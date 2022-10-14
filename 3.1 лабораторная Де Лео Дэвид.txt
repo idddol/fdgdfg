@@ -15,15 +15,22 @@ void Task1(int* arrt, int sizet) {
 	}
 }
 
-void Task2(char* arr3, int sizet, int* alp, int* arr4)
+void Task2(char* arr3, int sizet)
 {
+    int alp[26] = { 0 };
 	const int alb = 26;
 	int c[alb] = { 0 };
 	for (int i = 0; i < sizet; i++) {
-		arr4[i] = int(arr3[i]) - 96;
+		alp[int(arr3[i]) -'a']++;
 	}
-	for (int i = 0; i < sizet; i++) {
-		alp[arr4[i]]++;
+	int j=0;
+	for (int i = 0; i < 26; i++) {
+		while (alp[i] != 0) {
+			arr3[j] = char(i +'a');
+			j++;
+			alp[i]--;
+		}
+		
 	}
 }
 
@@ -75,7 +82,7 @@ void Task3(int* a, int l, int r) {
 
 int main() {
 	int choice = 0, size = 0;
-	int alp[26] = { 0 };
+	
 	int arr1[1000];
 	char arr2[1000];
 	while (true) {
@@ -106,12 +113,9 @@ int main() {
 				cin >> arr2[i];
 			}
 			cout << endl;
-			Task2(arr2, size, alp, arr1);
-			for (int i = 0; i < 26; i++) {
-				while (alp[i] != 0) {
-					cout << char(i + 96) << " ";
-					alp[i]--;
-				}
+			Task2(arr2, size);
+			for (int i=0;i < size; i++) {
+			    cout << arr2[i] << " ";
 			}
 			cout << endl;
 			break;
