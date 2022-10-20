@@ -22,7 +22,7 @@ int func(int n) {
 	while (n)
 	{
 		k++;
-		if (!(k % 2))
+		if (k % 2 == 0)
 		{
 			ch += n % 10;
 		}
@@ -32,7 +32,7 @@ int func(int n) {
 		n /= 10;
 	}
 	int s;
-	if (!(k % 2))
+	if (k % 2 == 0)
 	{
 		s = nch;
 	}
@@ -42,7 +42,7 @@ int func(int n) {
 	return s;
 }
 
-void task3(int *arr, int arr_size) {
+void task3(int *&arr, int arr_size) {
 	int zamena = 0;
 	for (int i = 0; i < arr_size; i++) {
 		for (int j = i + 1; j < arr_size; j++) {
@@ -53,9 +53,31 @@ void task3(int *arr, int arr_size) {
 			}
 		}
 	}
+	cout << "Сортировка выполнена";
+}
+void task4(int *&arr, int arr_size) {
+	int zamena = 0;
 	for (int i = 0; i < arr_size; i++) {
-		cout << arr[i] << " ";
+		for (int j = i + 1; j < arr_size; j++) {
+			if (arr[i] % 10 > arr[j] % 10) {
+				zamena = arr[i];
+				arr[i] = arr[j];
+				arr[j] = zamena;
+			}
+		}
 	}
+	for (int i = 0; i < arr_size; i++) {
+		for (int j = i + 1; j < arr_size; j++) {
+			if (arr[i] % 10 == arr[j] % 10) {
+				if (arr[i] < arr[j]) {
+					zamena = arr[i];
+					arr[i] = arr[j];
+					arr[j] = zamena;
+				}
+			}
+		}
+	}
+	cout << "Сортировка выполнена";
 }
 
 int main()
@@ -92,13 +114,14 @@ int main()
 		}
 		case 4:
 		{
-			cout << "Всего хорошего";
+			task4(arr, arr_size);
 			cout << endl;
 			break;
 		}
 		case 5:
 		{
 			delete[] arr;
+			cout << "Всего хорошего :D ";
 			return 0;
 		}
 		}
