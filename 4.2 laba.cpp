@@ -4,9 +4,7 @@
 #include <fstream> 
 #include <bitset>
 
-using std::string;
-using std::cout;
-using std::cin;
+using namespace std;
 
 string file_format(const string file_path_full) {   // по введенному полному расположению файла выводит расширение
     int num;
@@ -34,8 +32,8 @@ string file_path(const string file_path_full) { // по введенному полному располо
     return abc;
 }
 
-char file_disk(const string file_path_full) {   // по введенному полному расположению файла выводит название диска
-    return file_path_full.at(0);
+string file_disk(const string file_path_full) {   // по введенному полному расположению файла выводит название диска
+    return file_path_full.substr(0, 1);
 }
 
 string file_rename(string file_path_full) { // по введенному полному расположению файла и новому имени  переименовывает файл
@@ -47,12 +45,12 @@ string file_rename(string file_path_full) { // по введенному полному расположени
 
 bool file_copy(const string file_path_full) {
     int num;
-    std::fstream fs;
-    std::fstream out;
+    fstream fs;
+    fstream out;
     string temp;
     num = file_path_full.find_first_of('.');
-    fs.open(file_path_full, std::fstream::in);
-    out.open(file_path_full.substr(0, num) + "_copy" + file_path_full.substr(num, file_path_full.size() - num), std::fstream::out);
+    fs.open(file_path_full, fstream::in);
+    out.open(file_path_full.substr(0, num) + "_copy" + file_path_full.substr(num, file_path_full.size() - num), fstream::out);
     while (!fs.eof()) {
         fs >> temp;
         out << temp << '\n';
@@ -67,7 +65,7 @@ int main()
     int a = 0;
     int choise;
     while (a == 0) {
-        std::cout << "Что вы хотите выполнить?" "\n" << "1. Ввод" "\n" << "2. задание 1" "\n" << "3. задание 2" "\n" << "4. задание 3" "\n" << "5. Задание 4" "\n" "6. Задание 5" "\n" "7. Задание 6"  "\n" "8. Выход" "\n";
+        cout << "Что вы хотите выполнить?" "\n" << "1. Ввод" "\n" << "2. задание 1" "\n" << "3. задание 2" "\n" << "4. задание 3" "\n" << "5. Задание 4" "\n" "6. Задание 5" "\n" "7. Задание 6"  "\n" "8. Выход" "\n";
         cin >> choise;
         switch (choise)
         {
