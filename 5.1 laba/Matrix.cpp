@@ -1,8 +1,7 @@
 #include "Matrix.h"
 #include <iostream>
-Matrix::Matrix()
-{
-}
+
+Matrix::Matrix(){}
 
 Matrix::Matrix(int row, int col)
 {
@@ -66,6 +65,10 @@ void Matrix::make(int row, int col)
 	//return Matrix();
 }
 
+double Matrix::get_elem(int i, int j)
+{
+	return elem[i * size_col + j]; 
+}
 
 void Matrix::sum_matrix(const Matrix& temp)
 {

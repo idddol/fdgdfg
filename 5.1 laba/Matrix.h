@@ -16,7 +16,7 @@ public:
 	void sum_matrix(const Matrix& temp);
 	void mult_number(int number);
 	void mult_matrix(const Matrix& temp);
-	double get_elem(int i, int j) { return elem[i * size_col + j]; }
+	double get_elem(int i, int j);
 	int get_row() { return size_row; }
 	int get_col() { return size_col; }
 	double trase();

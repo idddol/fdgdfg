@@ -54,7 +54,7 @@ int main()
             matr1.mult_matrix(matr2);
             break;
         case 5:
-            matr1.trase();
+            cout << matr1.trase() << '\n';
             break;
         case 6:
             cout << "¬ведите множитель ";
