@@ -1,0 +1,10 @@
+﻿  Circle.cpp
+  CircleInSq.cpp
+  main.cpp
+D:\projects c++\Project14\main.cpp(2,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+D:\projects c++\Project14\main.cpp(3,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+D:\projects c++\Project14\main.cpp(4,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  Position.cpp
+  Square.cpp
+  Создание кода...
+  Project14.vcxproj -> D:\projects c++\Project14\x64\Debug\Project14.exe
