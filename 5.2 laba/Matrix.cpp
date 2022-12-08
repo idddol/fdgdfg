@@ -53,7 +53,7 @@ Matrix::~Matrix()
 		delete[]elem;
 }
 
-void Matrix::output()
+void Matrix::output() const
 {
 	int counter = 0;
 	for (int i = 0; i < size_col * size_row; i++)
@@ -79,11 +79,8 @@ void Matrix::sum_matrix(const Matrix& temp)
 
 Matrix Matrix::sum_matrix(const double* arr)
 {
-	Matrix out(this->size_row, this->size_col);
-	for (int i = 0; i < this->size_col * this->size_row; i++)
-	{
-		out.elem[i] = this->elem[i] + arr[i];
-	}
+	Matrix out(*this);
+	out.sum_matrix(Matrix(this->size_row, this->size_col, arr));
 	return out;
 }
 
@@ -98,6 +95,7 @@ void Matrix::mult_number(int number)
 
 void Matrix::mult_matrix(const Matrix& temp)
 {
+
 	if ((this->get_col() == temp.get_row()))
 	{
 		Matrix out(this->size_row, temp.size_col);
@@ -109,31 +107,24 @@ void Matrix::mult_matrix(const Matrix& temp)
 			}
 		}
 		out.output();
+		this->input(out.size_row, out.size_col, out.elem);
 	}
 	else {
 		std::cout << "Enter Matrix input";
-		if (this->elem != nullptr)
-			delete[]this->elem;
-		if (temp.elem != nullptr)
-			delete[]temp.elem;
-		std::abort();
 	}
 }
 
 Matrix Matrix::mult_matrix(const double* arr)
 {
-	Matrix out(this->size_row, this->size_col);
-	for (int i = 0; i < this->size_row; i++) {
-		for (int j = 0; j < this->size_col; j++) {
-			for (int k = 0; k < this->size_col; k++) {
-				out.elem[i * this->size_col + j] = this->elem[i * this->size_col + k] * arr[k * size_col + j];
-			}
-		}
+	Matrix out;
+	if (sizeof(arr) % (sizeof(arr[0]) * this->size_col) == 0) {
+		int rhs_cols = sizeof(arr) / (sizeof(arr[0]) * this->size_col);
+		out.mult_matrix(Matrix(this->size_col, rhs_cols, arr));
 	}
 	return out;
 }
 
-double Matrix::trase()
+double Matrix::trase() const
 {
 	double out = 0;
 	for (int i = 0; i < this->size_col; i++) {
@@ -161,4 +152,11 @@ void Matrix::input(int row, int col, double* arr)
 	size_row = row;
 	elem = new double[size_col * size_row];
 	for (int i = 0; i < size_col * size_row; i++) elem[i] = arr[i];
+}
+
+void Matrix::input()
+{
+	std::cout << "¬ведите число строк и столбцов ";
+	std::cin >> size_row >> size_col;
+	Matrix::input(size_row, size_col);
 }

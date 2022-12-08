@@ -21,7 +21,7 @@ Matrix::Matrix(const int size_rows)
 	if (elem != nullptr)
 		delete[]elem;
 	elem = new double[size_rows * 3];
-	std::cout << "Ââĺäčňĺ ýëĺěĺíňű ěŕňđčöű ";
+	std::cout << "Введите значения ";
 	for (int i = 0; i < cols * 3; i++)
 	{
 		std::cin >> elem[i];
@@ -69,7 +69,7 @@ void Matrix::input(int size)
 	cols = size;
 	if (elem != nullptr)
 		delete[]elem;
-	std::cout << "Ââĺäčňĺ ěŕňđčöó ";
+	std::cout << "Введите значения ";
 	elem = new double[size * 3];
 	for (int i = 0; i < size * 3; i++)
 	{
@@ -141,7 +141,7 @@ void Matrix::input()
 {
 	setlocale(LC_ALL, "Russian");
 	int size;
-	std::cout << "Ââĺäčňĺ đŕçěĺđ ěŕňđčöű ";
+	std::cout << "Введите размер ";
 	std::cin >> size;
 	this->input(size);
 }
@@ -150,19 +150,8 @@ std::istream& operator>>(std::istream& input, Matrix& temp)
 {
 	int size;
 	setlocale(LC_ALL, "Russian");
-	std::cout << "Ââĺäčňĺ đŕçěĺđ ěŕňđčöű ";
+	std::cout << "Введите размер ";
 	input >> size;
-	/*temp.rows = size;
-	temp.cols = size;
-	if (temp.elem != nullptr)
-		delete[]temp.elem;
-	temp.elem = new double[size * 3];
-	for (int i = 0; i < size * 3; i++)
-	{
-		temp.elem[i] = i + 1;
-	}
-	temp.elem[temp.rows - 1] = 0;
-	temp.elem[temp.rows * 2] = 0;*/
 	temp.input(size);
 	return input;
 }
@@ -177,7 +166,7 @@ void operator-(Matrix& left)
 {
 	if ((left.cols == right.rows))
 	{
-		D3Matrix out;
+		Matrix out;
 		out = left;
 		for (int i = 0; i < left.rows; i++) {
 			for (int j = 0; j < right.cols; j++) {

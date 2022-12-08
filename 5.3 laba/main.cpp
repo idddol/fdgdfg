@@ -33,7 +33,9 @@ int main()
         else if (choise == 4) {
             Matrix m1;
             int k;
-            cin >> m1 >> k;
+            cin >> m1;
+            cout << "¬ведите число ";
+            cin >> k;
             m1* k;
             cout << m1;
         }
