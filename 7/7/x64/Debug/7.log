@@ -1,0 +1,8 @@
+﻿  7.cpp
+D:\WorkDir\labs-idddol\7\7\7.cpp(72,55): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\WorkDir\labs-idddol\7\7\7.cpp(87,49): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\WorkDir\labs-idddol\7\7\7.cpp(104,51): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\WorkDir\labs-idddol\7\7\7.cpp(125,49): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\WorkDir\labs-idddol\7\7\7.cpp(138,51): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\WorkDir\labs-idddol\7\7\7.cpp(151,57): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  7.vcxproj -> D:\WorkDir\labs-idddol\7\x64\Debug\7.exe
