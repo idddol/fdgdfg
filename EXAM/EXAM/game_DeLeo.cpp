@@ -1,15 +1,12 @@
 #include "game_DeLeo.h"
 #include <iostream>
+#include <fstream>
+#include <string>
 
 Game_Deleo::Game_Deleo()
 {
 	this->year = 1;
 	this->phase = 1;
-}
-
-Game_Deleo::Game_Deleo(int number) {
-	for (int i = 0; i < number; i++)
-		this->gamers.push(Gamer{});
 }
 
 Game_Deleo::Game_Deleo(int gamers_count)
@@ -246,3 +243,517 @@ void Game_Deleo::phase7() {
 void Game_Deleo::phase8() {
 
 }
+
+void Game_Deleo::phase246() {
+	
+};
+
+/*void Game_Deleo::advisor_help(Gamer& gamer, Adviser& adviser)
+{
+	int j;
+	if (adviser[0].gamer_name != "0")
+	{
+		for (int i = 0; i < gamers.size; i++)
+		{
+			if (gamer[i].name == adviser[0].gamer_name)
+			{
+				j = i;
+				continue;
+			}
+		}
+		std::cout « "The " « advisor[0].advisor_name « " gived " « advisor[0].gamer_name « " 1 vp" « std::endl;
+
+		gamer[j].victory_points++;
+	}
+	else if (advisor[1].gamer_name != "0")
+	{
+		for (int i = 0; i < gamers.size; i++)
+		{
+			if (gamer[i].name == advisor[1].gamer_name)
+			{
+				j = i;
+				continue;
+			}
+		}
+		std::cout « "The " « advisor[1].advisor_name « " gived " « advisor[1].gamer_name « " 1 gold" « std::endl;
+
+		gamer[j].gold++;
+	}
+	else if (advisor[2].gamer_name != "0")
+	{
+		for (int i = 0; i < gamers.size; i++)
+		{
+			if (gamer[i].name == advisor[2].gamer_name)
+			{
+				j = i;
+				continue;
+			}
+		}
+		std::cout « "The " « advisor[2].advisor_name « " gived " « advisor[2].gamer_name « " 1 wood" « std::endl;
+
+		gamer[j].wood++;
+	}
+	else if (advisor[3].gamer_name != "0")
+	{
+		for (int i = 0; i < gamers.size; i++)
+		{
+			if (gamer[i].name == advisor[3].gamer_name)
+			{
+				j = i;
+				continue;
+			}
+		}
+		std::cout « "The " « advisor[3].advisor_name « " gived " « advisor[3].gamer_name « " 1 gold or 1 wood" « std::endl;
+
+		std::cout « "gold?";
+		std::string s;
+		cin » s;
+		if (s == "yes") gamer[j].gold++;
+		else gamer[j].wood++;
+	}
+	else if (advisor[4].gamer_name != "0")
+	{
+		for (int i = 0; i < gamers.size; i++)
+		{
+			if (gamer[i].name == advisor[4].gamer_name)
+			{
+				j = i;
+				continue;
+			}
+		}
+		std::cout « "The " « advisor[4].advisor_name « " gived " « advisor[4].gamer_name « " 1 milit" « std::endl;
+
+		gamer[j].military_register++;
+	}
+	else if (advisor[5].gamer_name != "0")
+	{
+		for (int i = 0; i < gamers.size; i++)
+		{
+			if (gamer[i].name == advisor[5].gamer_name)
+			{
+				j = i;
+				continue;
+			}
+		}
+		std::cout « "The " « advisor[5].advisor_name « " gived " « advisor[5].gamer_name « " 2 another resourse by your 1" « std::endl;
+
+		std::cout « "What you wanna give?";
+		std::string s;
+		cin » s;
+		if (s == "gold") gamer[j].gold -= 2;
+		else if (s == "wood") gamer[j].wood -= 2;
+		else if (s == "stone") gamer[j].stone -= 2;
+		gamer[j].gold++;
+		gamer[j].wood++;
+		gamer[j].stone++;
+	}
+	else if (advisor[6].gamer_name != "0")
+	{
+		for (int i = 0; i < gamers.size; i++)
+		{
+			if (gamer[i].name == advisor[6].gamer_name)
+			{
+				j = i;
+				continue;
+			}
+		}
+		std::cout « "The " « advisor[6].advisor_name « " gived " « advisor[6].gamer_name « " 1 resourse and 1 token" « std::endl;
+
+		std::cout « "What you wanna have?";
+		std::string s;
+		cin » s;
+		if (s == "gold") gamer[j].gold++;
+		else if (s == "wood") gamer[j].wood++;
+		else if (s == "stone") gamer[j].stone++;
+	}
+	else if (advisor[7].gamer_name != "0")
+	{
+		for (int i = 0; i < gamers.size; i++)
+		{
+			if (gamer[i].name == advisor[7].gamer_name)
+			{
+				j = i;
+				continue;
+			}
+		}
+		std::cout « "The " « advisor[7].advisor_name « " gived " « advisor[7].gamer_name « " 2 gold" « std::endl;
+
+		gamer[j].gold += 2;
+	}
+	else if (advisor[8].gamer_name != "0")
+	{
+		for (int i = 0; i < gamers.size; i++)
+		{
+			if (gamer[i].name == advisor[8].gamer_name)
+			{
+				j = i;
+				continue;
+			}
+		}
+		std::cout « "The " « advisor[8].advisor_name « " gived " « advisor[8].gamer_name « " 1 wood and 1 gold or 1 wood and 1 stone" « std::endl;
+
+		std::cout « "What you wanna have?";
+		std::string s;
+		cin » s;
+		if (s == "gold") gamer[j].gold++;
+		else if (s == "stone") gamer[j].stone++;
+		gamer[j].wood++;
+	}
+	else if (advisor[9].gamer_name != "0")
+	{
+		for (int i = 0; i < gamers.size; i++)
+		{
+			if (gamer[i].name == advisor[9].gamer_name)
+			{
+				j = i;
+				continue;
+			}
+		}
+		std::cout << "The " « advisor[9].advisor_name « " gived " « advisor[9].gamer_name « " 2 militar and see the hightest enemy" « std::endl;
+
+		gamer[j].military_register += 2;
+		//watch enemy
+	}
+	else if (advisor[10].gamer_name != "0")
+	{
+		for (int i = 0; i < gamers.size; i++)
+		{
+			if (gamer[i].name == advisor[10].gamer_name)
+			{
+				j = i;
+				continue;
+			}
+		}
+		std::cout « "The " « advisor[10].advisor_name « " gived " « advisor[10].gamer_name « " 1 stone and 1 wood or 1 stone and 1
+			gold" « std::endl;
+
+			std::cout « "What you wanna have?";
+		std::string s;
+		cin » s;
+		if (s == "gold") gamer[j].gold++;
+		else if (s == "wood") gamer[j].wood++;
+		gamer[j].stone++;
+	}
+	else if (advisor[11].gamer_name != "0")
+	{
+		for (int i = 0; i < gamers.size; i++)
+		{
+			if (gamer[i].name == advisor[11].gamer_name)
+			{
+				j = i;
+				continue;
+			}
+		}
+		std::cout « "The " « advisor[11].advisor_name « " gived " « advisor[11].gamer_name « " 2 resourses and 1 token" « std::endl;
+
+		std::cout « "What you wanna have?";
+		std::string s;
+		cin » s;
+		if (s == "gold") gamer[j].gold++;
+		else if (s == "wood") gamer[j].wood++;
+		else if (s == "stone") gamer[j].stone++;
+
+		std::cout « "What you wanna have?";
+		cin » s;
+		if (s == "gold") gamer[j].gold++;
+		else if (s == "wood") gamer[j].wood++;
+		else if (s == "stone") gamer[j].stone++;
+
+		gamer[j].token++;
+	}
+	else if (advisor[12].gamer_name != "0")
+	{
+		for (int i = 0; i < gamers.size; i++)
+		{
+			if (gamer[i].name == advisor[12].gamer_name)
+			{
+				j = i;
+				continue;
+			}
+		}
+		std::cout « "The " « advisor[12].advisor_name « " gived " « advisor[12].gamer_name « " 3 stone" « std::endl;
+
+		gamer[j].stone += 3;
+	}
+	else if (advisor[13].gamer_name != "0")
+	{
+		for (int i = 0; i < gamers.size; i++)
+		{
+			if (gamer[i].name == advisor[13].gamer_name)
+			{
+				j = i;
+				continue;
+			}
+		}
+		std::cout « "The " « advisor[13].advisor_name « " gived " « advisor[13].gamer_name « " - 1 vp for 3 resourses" « std::endl;
+
+		gamer[j].victory_points —;
+
+		std::cout « "What you wanna have?";
+		std::string s;
+		cin » s;
+		if (s == "gold") gamer[j].gold++;
+		else if (s == "wood") gamer[j].wood++;
+		else if (s == "stone") gamer[j].stone++;
+
+		std::cout « "What you wanna have?";
+		cin » s;
+		if (s == "gold") gamer[j].gold++;
+		else if (s == "wood") gamer[j].wood++;
+		else if (s == "stone") gamer[j].stone++;
+
+		std::cout « "What you wanna have?";
+		cin » s;
+		if (s == "gold") gamer[j].gold++;
+		else if (s == "wood") gamer[j].wood++;
+		else if (s == "stone") gamer[j].stone++;
+	}
+	else if (advisor[14].gamer_name != "0")
+	{
+		for (int i = 0; i < gamers.size; i++)
+		{
+			if (gamer[i].name == advisor[14].gamer_name)
+			{
+				j = i;
+				continue;
+			}
+		}
+		std::cout « "The " « advisor[14].advisor_name « " gived " « advisor[14].gamer_name « " 1 gold 1 wood 1 stone" « std::endl;
+
+		gamer[j].gold++;
+		gamer[j].wood++;
+		gamer[j].stone++;
+	}
+	else if (advisor[15].gamer_name != "0")
+	{
+		for (int i = 0; i < gamers.size; i++)
+		{
+			if (gamer[i].name == advisor[15].gamer_name)
+			{
+				j = i;
+				continue;
+			}
+		}
+		std::cout « "The " « advisor[15].advisor_name « " gived " « advisor[15].gamer_name « " 4 gold" « std::endl;
+
+		gold += 4;
+	}
+	else if (advisor[16].gamer_name != "0")
+	{
+		for (int i = 0; i < gamers.size; i++)
+		{
+			if (gamer[i].name == advisor[16].gamer_name)
+			{
+				j = i;
+				continue;
+			}
+		}
+		std::cout « "The " « advisor[16].advisor_name « " gived " « advisor[16].gamer_name « " 2 resourses and see the hightest enemy and 3 vp" « std::endl;
+
+		std::cout « "What you wanna have?";
+		std::string s;
+		cin » s;
+		if (s == "gold") gamer[j].gold++;
+		else if (s == "wood") gamer[j].wood++;
+		else if (s == "stone") gamer[j].stone++;
+
+		std::cout « "What you wanna have?";
+		cin » s;
+		if (s == "gold") gamer[j].gold++;
+		else if (s == "wood") gamer[j].wood++;
+		else if (s == "stone") gamer[j].stone++;
+
+		gamer[j].victory_points += 3;
+
+		//watch enemy
+	}
+	else if (advisor[17].gamer_name != "0")
+	{
+		for (int i = 0; i < gamers.size; i++)
+		{
+			if (gamer[i].name == advisor[17].gamer_name)
+			{
+				j = i;
+				continue;
+			}
+		}
+		std::cout « "The " « advisor[17].advisor_name « " gived " « advisor[17].gamer_name « " 1 gold 1 stone 1 wood and 1 military" « std::endl;
+
+		gamer[j].gold++;
+		gamer[j].wood++;
+		gamer[j].stone++;
+		gamer[j].military_register++;
+	}*/
+
+
+bool Game_Deleo::load_game(const std::string filename, Gamer& gamer, Adviser& adviser) {
+	std::string a;
+	int n = 0;
+	std::fstream fs;
+	fs.open(filename, std::fstream::in);
+	while (std::getline(fs,a)) {
+		if (n == 0) {
+			gamer.name = a;
+			n++;
+		}
+		if (n == 1) {
+			gamer.gold = stoi(a);
+			n++;
+		}
+		if (n == 2) {
+			gamer.wood = stoi(a);
+			n++;
+		}
+		if (n == 3) {
+			gamer.stone = stoi(a);
+			n++;
+		}
+		if (n == 4) {
+			gamer.cube_1 = stoi(a);
+			n++;
+		}
+		if (n == 5) {
+			gamer.cube_2 = stoi(a);
+			n++;
+		}
+		if (n == 6) {
+			gamer.cube_3 = stoi(a);
+			n++;
+		}
+		if (n == 7) {
+			gamer.has_additional_cube = stoi(a);
+			n++;
+		}
+		if (n == 8) {
+			gamer.additional_cude = stoi(a);
+			n++;
+		}
+		if (n == 9) {
+			gamer.building_tokens = stoi(a);
+			n++;
+		}
+		if (n == 10) {
+			gamer.has_adviser = stoi(a);
+			n++;
+		}
+		if (n == 11) {
+			gamer.military_register = stoi(a);
+			n++;
+		}
+		if (n == 12) {
+			gamer.victory_points = stoi(a);
+			n++;
+		}
+		if (n == 13) {
+			gamer.buildings[0] = a;
+			n++;
+		}
+		if (n == 14) {
+			adviser.adviser_name = a;
+			n++;
+		}
+		if (n == 15) {
+			adviser.gamer_name = a;
+			n++;
+		}
+		if (n == 16) {
+			this->year = stoi(a);
+			n++;
+		}
+		if (n == 17) {
+			this->phase = stoi(a);
+			n++;
+		}
+		if (n == 18) {
+			this->enemy = a;
+			n++;
+		}
+	}
+	fs.close();
+}
+/*bool Game_Deleo::save_game(const std::string filename, Gamer& gamer, Adviser& adviser) {
+	std::string a;
+	int n = 0;
+	std::fstream fs;
+	fs.open(filename, std::fstream::out);
+	while (n <= 18) {
+		if (n == 0) {
+			fs << gamer.name;
+			fs << "\n";
+			n++;
+		}
+		if (n == 1) {
+			gamer.gold = stoi(a);
+			n++;
+		}
+		if (n == 2) {
+			gamer.wood = stoi(a);
+			n++;
+		}
+		if (n == 3) {
+			gamer.stone = stoi(a);
+			n++;
+		}
+		if (n == 4) {
+			gamer.cube_1 = stoi(a);
+			n++;
+		}
+		if (n == 5) {
+			gamer.cube_2 = stoi(a);
+			n++;
+		}
+		if (n == 6) {
+			gamer.cube_3 = stoi(a);
+			n++;
+		}
+		if (n == 7) {
+			gamer.has_additional_cube = stoi(a);
+			n++;
+		}
+		if (n == 8) {
+			gamer.additional_cude = stoi(a);
+			n++;
+		}
+		if (n == 9) {
+			gamer.building_tokens = stoi(a);
+			n++;
+		}
+		if (n == 10) {
+			gamer.has_adviser = stoi(a);
+			n++;
+		}
+		if (n == 11) {
+			gamer.military_register = stoi(a);
+			n++;
+		}
+		if (n == 12) {
+			gamer.victory_points = stoi(a);
+			n++;
+		}
+		if (n == 13) {
+			gamer.buildings[0] = a;
+			n++;
+		}
+		if (n == 14) {
+			adviser.adviser_name = a;
+			n++;
+		}
+		if (n == 15) {
+			adviser.gamer_name = a;
+			n++;
+		}
+		if (n == 16) {
+			this->year = stoi(a);
+			n++;
+		}
+		if (n == 17) {
+			this->phase = stoi(a);
+			n++;
+		}
+		if (n == 18) {
+			this->enemy = a;
+			n++;
+		}
+	}
+	fs.close();
+}*/

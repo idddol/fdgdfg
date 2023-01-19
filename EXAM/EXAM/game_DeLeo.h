@@ -44,8 +44,12 @@ private:
 public:
 	Game_Deleo();
 	~Game_Deleo();
-	Game_Deleo(int number);
-	Game_Deleo(const Game_Deleo&);
+	Game_Deleo(int gamers_count);
+	Game_Deleo(const Game_Deleo& c_game);
+
+	bool load_game(const std::string filename, Gamer& gamer, Adviser& adviser);
+	bool save_game(const std::string filename, Gamer& gamer, Adviser& adviser);
+	void advisor_help(Gamer& gamer, Adviser& adviser);
 
 	void phase1();
 	void phase3();
