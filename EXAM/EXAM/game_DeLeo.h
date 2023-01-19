@@ -2,78 +2,54 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include <stack>
 
-using namespace std;
+// Характеристики игрока
+typedef struct Gamer {
+	std::string name;
+	int gold;
+	int wood;
+	int stone;
+	int cube_1;
+	int cube_2;
+	int cube_3;
+	bool has_additional_cube; // доп. кубик
+	int additional_cude; // доп. кубик
+	int building_tokens; // жетоны зданий
+	bool has_adviser; // советник
+	int military_register; // значение воинского реестра
+	int victory_points; // победные очки
+	std::vector<std::string> buildings; // вектор построек
 
-enum building {
-	Statuya,
-	Chasovnya,
-	Zerkov,
-	Sobor,
-	Tractir,
-	Rinok,
-	Farms,
-	Torg_guild,
-	Kazarms,
-	Palisad,
-	Konushni,
-	Kamen_sten,
-	Krepost,
-	Chastokol,
-	Tower,
-	Ratusha,
-	Posolstvo
-};
+} Gamer;
 
-enum resource {
-	Gold,//золото
-	Wood,//дерево
-	Rock,//камень
-	Token,//жетоны
-	Cube1,//кубик1
-	Cube2,//кубик2
-	Cube3,//кубик3
-	Add_cube //доп кубик
-};
-
-struct Sovetnik {
-	string name; //имя советника
-	string player_name; //имя игрока
-};
-
-struct Gamer {
-	string name; //имя игрока
-	bool sovetnik; //наличие советника
-	vector <resource> resources;//ресурсы игрока
-	int registr; //значение воинского регистра
-	int score; //количество победных очков
-	vector<building> buildings;//постройки игрока
-};
+// советник и занявший его игрок
+typedef struct Adviser {
+	std::string adviser_name;
+	std::string gamer_name;
+	Adviser(std::string a_name, std::string g_name)
+	{
+		this->adviser_name = a_name;
+		this->gamer_name = g_name;
+	}
+} Adviser;
 
 class Game_Deleo
 {
 private:
-	stack<Gamer> gamers;
-	vector<Sovetnik> sovetniks;
-
-	int year;//год
-	int phase;//фаза
-	string enemy;//враг
+	std::vector<Gamer> gamers;
+	std::vector<Adviser> advisers;
+	int year;
+	int phase;
+	std::string enemy;
 public:
+	Game_Deleo();
+	~Game_Deleo();
+	Game_Deleo(int number);
+	Game_Deleo(const Game_Deleo&);
+
 	void phase1();
-	void phase2();
 	void phase3();
-	void phase4();
 	void phase5();
-	void phase6();
 	void phase7();
 	void phase8();
-
-	Game_Deleo();
-	Game_Deleo(int number);
-	Game_Deleo(const Game_Deleo& game);//конструктор копирования
-	~Game_Deleo();
-
-	void defense_level(const char* enemy, int kings_help, Gamer& gamer);
 };
