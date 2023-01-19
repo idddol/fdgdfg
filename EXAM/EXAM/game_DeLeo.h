@@ -72,7 +72,7 @@ public:
 
 	Game_Deleo();
 	Game_Deleo(int number);
-	Game_Deleo(const Game_Deleo& game);
+	Game_Deleo(const Game_Deleo& game);//конструктор копирования
 	~Game_Deleo();
 
 	void defense_level(const char* enemy, int kings_help, Gamer& gamer);
