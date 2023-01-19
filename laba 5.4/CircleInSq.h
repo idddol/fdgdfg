@@ -8,5 +8,4 @@ public:
     CircleInSq();
     ~CircleInSq();
     CircleInSq(double x, double y, double rad);
-    CircleInSq(double seide);
 };

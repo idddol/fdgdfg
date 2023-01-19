@@ -3,27 +3,22 @@
 
 Square::Square()
 {
+	c1[0] = 0;
+	c1[1] = 0;
+	c2[0] = 0;
+	c2[1] = 0;
+	c3[0] = 0;
+	c3[1] = 0;
+	c4[0] = 0;
+	c4[1] = 0;
 }
 
 Square::~Square()
 {
 }
 
-Square::Square(double x, double y, double side)
+Square::Square(double x, double y, double side):Position(x, y)
 {
-	c1[0] = x - side / 2;
-	c1[1] = y + side / 2;
-	c2[0] = x + side / 2;
-	c2[1] = y + side / 2;
-	c3[0] = x - side / 2;
-	c3[1] = y - side / 2;
-	c4[0] = x + side / 2;
-	c4[1] = y - side / 2;
-}
-
-Square::Square(double side)
-{
-	this->getrandom();
 	c1[0] = x - side / 2;
 	c1[1] = y + side / 2;
 	c2[0] = x + side / 2;

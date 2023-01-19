@@ -1,7 +1,7 @@
 #pragma once
 class Position
 {
-public:
+protected:
 	double x, y;
 public:
 	Position();
@@ -9,5 +9,5 @@ public:
 	Position(int z);
 	Position(double x, double y);
 	void out();
-	void getrandom();
+	void getrandom(); 
 };

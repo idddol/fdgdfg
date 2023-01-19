@@ -1,10 +1,30 @@
 ﻿  Circle.cpp
   CircleInSq.cpp
   main.cpp
-D:\projects c++\Project14\main.cpp(2,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-D:\projects c++\Project14\main.cpp(3,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-D:\projects c++\Project14\main.cpp(4,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+D:\WorkDir\labs-idddol\laba 5.4\main.cpp(2,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+D:\WorkDir\labs-idddol\laba 5.4\main.cpp(3,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+D:\WorkDir\labs-idddol\laba 5.4\main.cpp(4,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+D:\WorkDir\labs-idddol\laba 5.4\main.cpp(32,25): error C2665: Circle::Circle: ни одна из 3 перегрузок не может преобразовать все типы аргументов
+D:\WorkDir\labs-idddol\laba 5.4\Circle.h(13,1): message : может быть "Circle::Circle(const Circle &)"
+D:\WorkDir\labs-idddol\laba 5.4\main.cpp(32,21): message : "Circle::Circle(const Circle &)": невозможно преобразовать аргумент 1 из "double" в "const Circle &"
+D:\WorkDir\labs-idddol\laba 5.4\main.cpp(32,25): message : Причина: невозможно преобразовать "double" в "const Circle"
+D:\WorkDir\labs-idddol\laba 5.4\main.cpp(32,25): message : Ни один конструктор не смог принять исходный тип, либо разрешение перегрузки конструктора неоднозначно
+D:\WorkDir\labs-idddol\laba 5.4\Circle.h(13,1): message : см. объявление "Circle::Circle"
+D:\WorkDir\labs-idddol\laba 5.4\main.cpp(32,25): message : при попытке сопоставить список аргументов "(double)"
+D:\WorkDir\labs-idddol\laba 5.4\main.cpp(42,26): error C2665: Square::Square: ни одна из 3 перегрузок не может преобразовать все типы аргументов
+D:\WorkDir\labs-idddol\laba 5.4\Square.h(16,1): message : может быть "Square::Square(const Square &)"
+D:\WorkDir\labs-idddol\laba 5.4\main.cpp(42,21): message : "Square::Square(const Square &)": невозможно преобразовать аргумент 1 из "double" в "const Square &"
+D:\WorkDir\labs-idddol\laba 5.4\main.cpp(42,26): message : Причина: невозможно преобразовать "double" в "const Square"
+D:\WorkDir\labs-idddol\laba 5.4\main.cpp(42,26): message : Ни один конструктор не смог принять исходный тип, либо разрешение перегрузки конструктора неоднозначно
+D:\WorkDir\labs-idddol\laba 5.4\Square.h(16,1): message : см. объявление "Square::Square"
+D:\WorkDir\labs-idddol\laba 5.4\main.cpp(42,26): message : при попытке сопоставить список аргументов "(double)"
+D:\WorkDir\labs-idddol\laba 5.4\main.cpp(53,30): error C2665: CircleInSq::CircleInSq: ни одна из 3 перегрузок не может преобразовать все типы аргументов
+D:\WorkDir\labs-idddol\laba 5.4\CircleInSq.h(11,1): message : может быть "CircleInSq::CircleInSq(const CircleInSq &)"
+D:\WorkDir\labs-idddol\laba 5.4\main.cpp(53,25): message : "CircleInSq::CircleInSq(const CircleInSq &)": невозможно преобразовать аргумент 1 из "double" в "const CircleInSq &"
+D:\WorkDir\labs-idddol\laba 5.4\main.cpp(53,30): message : Причина: невозможно преобразовать "double" в "const CircleInSq"
+D:\WorkDir\labs-idddol\laba 5.4\main.cpp(53,30): message : Ни один конструктор не смог принять исходный тип, либо разрешение перегрузки конструктора неоднозначно
+D:\WorkDir\labs-idddol\laba 5.4\CircleInSq.h(11,1): message : см. объявление "CircleInSq::CircleInSq"
+D:\WorkDir\labs-idddol\laba 5.4\main.cpp(53,30): message : при попытке сопоставить список аргументов "(double)"
   Position.cpp
   Square.cpp
   Создание кода...
-  Project14.vcxproj -> D:\projects c++\Project14\x64\Debug\Project14.exe

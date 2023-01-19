@@ -3,19 +3,14 @@
 
 Circle::Circle()
 {
+	this->rad = 0;
 }
 
 Circle::~Circle()
 {
 }
 
-Circle::Circle(double rad)
-{
-	this->getrandom();
-	this->rad = rad;
-}
-
-Circle::Circle(double x, double y, double rad)
+Circle::Circle(double x, double y, double rad):Position(x,y)
 {
 	this->x = x;
 	this->y = y;
