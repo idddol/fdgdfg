@@ -1,0 +1,8 @@
+﻿  Laba2var11.cpp
+D:\WorkDir\labs-idddol\Laba2var11\Laba2var11\Laba2var11.cpp(40,61): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+D:\WorkDir\labs-idddol\Laba2var11\Laba2var11\Laba2var11.cpp(45,61): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+D:\WorkDir\labs-idddol\Laba2var11\Laba2var11\Laba2var11.cpp(114,6): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\WorkDir\labs-idddol\Laba2var11\Laba2var11\Laba2var11.cpp(203,26): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  Source.cpp
+  Создание кода...
+  Laba2var11.vcxproj -> D:\WorkDir\labs-idddol\Laba2var11\x64\Debug\Laba2var11.exe

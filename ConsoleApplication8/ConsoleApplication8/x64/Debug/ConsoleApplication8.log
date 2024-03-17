@@ -1,0 +1,5 @@
+﻿  ConsoleApplication8.cpp
+D:\WorkDir\labs-idddol\ConsoleApplication8\ConsoleApplication8\ConsoleApplication8.cpp(293,34): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+D:\WorkDir\labs-idddol\ConsoleApplication8\ConsoleApplication8\ConsoleApplication8.cpp(191): warning C4715: anscheck: значение возвращается не при всех путях выполнения
+D:\WorkDir\labs-idddol\ConsoleApplication8\ConsoleApplication8\ConsoleApplication8.cpp(140): warning C4715: vibor: значение возвращается не при всех путях выполнения
+  ConsoleApplication8.vcxproj -> D:\WorkDir\labs-idddol\ConsoleApplication8\x64\Debug\ConsoleApplication8.exe

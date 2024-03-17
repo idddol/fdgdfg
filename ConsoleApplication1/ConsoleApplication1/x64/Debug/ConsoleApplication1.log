@@ -1,0 +1,4 @@
+﻿  ConsoleApplication1.cpp
+D:\WorkDir\labs-idddol\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(128): warning C4715: wantTocontinue: значение возвращается не при всех путях выполнения
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(1094,5): error MSB6006: "link.exe" завершилась с кодом 1168.
+LINK : fatal error LNK1168: не удается открыть D:\WorkDir\labs-idddol\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe для записи

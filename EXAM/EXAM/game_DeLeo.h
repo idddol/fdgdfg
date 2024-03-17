@@ -20,23 +20,23 @@ typedef struct Gamer {
 	int victory_points; // победные очки
 	std::vector<std::string> buildings; // вектор построек
 
-} Gamer;
+} gamers;
 
 // советник и занявший его игрок
 typedef struct Adviser {
-	std::string adviser_name;
-	std::string gamer_name;
+	std::string advisers_name;
+	std::string gamers_name;
 	Adviser(std::string a_name, std::string g_name)
 	{
-		this->adviser_name = a_name;
-		this->gamer_name = g_name;
+		this->advisers_name = a_name;
+		this->gamers_name = g_name;
 	}
 } Adviser;
 
 class Game_Deleo
 {
 private:
-	std::vector<Gamer> gamers;
+	std::vector<gamers> gamers;
 	std::vector<Adviser> advisers;
 	int year;
 	int phase;
@@ -47,13 +47,14 @@ public:
 	Game_Deleo(int gamers_count);
 	Game_Deleo(const Game_Deleo& c_game);
 
-	bool load_game(const std::string filename, Gamer& gamer, Adviser& adviser);
-	bool save_game(const std::string filename, Gamer& gamer, Adviser& adviser);
-	void advisor_help(Gamer& gamer, Adviser& adviser);
+	bool load_game(const std::string filename, Gamer& gamers, Adviser& adviser);
+	bool save_game(const std::string filename, Gamer& gamers, Adviser& adviser);
+	void adviser_help(Gamer& gamers, Adviser& advisers);
 
 	void phase1();
 	void phase3();
 	void phase5();
 	void phase7();
 	void phase8();
+	void phase246_adviser();
 };

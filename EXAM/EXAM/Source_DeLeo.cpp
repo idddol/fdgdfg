@@ -4,6 +4,6 @@
 using namespace std;
 
 int main() {
-	std::cout << "Welcome to the Kingburg" << std::endl;
+	std::cout << "Welcome to the Kingsburg" << std::endl;
 	return 0;
 }

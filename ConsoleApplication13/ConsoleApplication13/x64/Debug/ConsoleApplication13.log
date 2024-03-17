@@ -1,0 +1,105 @@
+﻿  ConsoleApplication13.cpp
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(23,5): error C4235: использовано нестандартное расширение: ключевое слово "__asm" данной архитектурой не поддерживается
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(24,9): error C2065: mov: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(24,13): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "eax"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(24,13): error C2065: eax: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(25,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "mov"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(25,9): error C2065: mov: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(25,13): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "ebx"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(25,13): error C2065: ebx: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(26,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "test"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(26,9): error C2065: test: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(26,14): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "ebx"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(26,14): error C2065: ebx: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(26,19): error C2065: ebx: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(27,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "jz"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(27,9): error C2065: jz: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(27,12): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "m"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(27,12): error C2065: m: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(28,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "cdq"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(28,9): error C2065: cdq: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(28,14): error C2065: готовимся: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(28,33): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "к"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(28,33): error C2065: к: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(28,36): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "делению"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(28,36): error C2065: делению: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(28,51): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "eax"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(28,51): error C2065: eax: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(28,57): error C2059: синтаксическая ошибка: >
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(29,17): error C2065: eax: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(30,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "mov"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(30,9): error C2065: mov: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(30,13): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "ebx"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(30,13): error C2065: ebx: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(31,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "sub"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(31,9): error C2065: sub: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(31,13): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "ebx"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(31,13): error C2065: ebx: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(31,18): error C2065: eax: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(31,23): error C2065: ebx: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(32,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "mov"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(32,9): error C2065: mov: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(32,13): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "eax"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(32,13): error C2065: eax: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(33,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "imul"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(33,9): error C2065: imul: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(33,14): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "eax"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(33,14): error C2065: eax: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(33,22): error C2059: синтаксическая ошибка: <
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(35,23): error C2065: ebx: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(38,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "push"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(38,9): error C2065: push: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(38,14): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "ebx"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(38,14): error C2065: ebx: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(38,19): error C2065: в: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(38,22): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "стеке"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(38,22): error C2065: стеке: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(38,33): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "c"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(40,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "mov"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(38,45): warning C4552: "-": результат выражения не используется
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(40,9): error C2065: mov: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(40,13): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "eax"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(40,13): error C2065: eax: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(40,21): error C2065: eax: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(41,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "imul"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(41,9): error C2065: imul: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(41,14): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "a"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(41,17): error C2059: синтаксическая ошибка: <
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(43,17): error C2059: синтаксическая ошибка: <
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(45,21): error C2065: ebx: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(46,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "sub"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(46,9): error C2065: sub: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(46,13): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "ebx"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(46,13): error C2065: ebx: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(46,18): error C2065: eax: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(46,23): error C2065: ebx: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(48,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "pop"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(48,9): error C2065: pop: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(48,13): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "eax"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(48,13): error C2065: eax: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(48,18): error C2065: eax: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(50,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "cdq"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(50,9): error C2065: cdq: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(50,14): error C2065: eax: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(50,20): error C2059: синтаксическая ошибка: >
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(53,19): error C2065: eax: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(54,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "jmp"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(54,9): error C2065: jmp: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(54,13): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "m3"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(54,13): error C2065: m3: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(55,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "m"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(55,13): error C2065: mov: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(55,17): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "n"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(56,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "jmp"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(56,9): error C2065: jmp: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(56,13): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "m3"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(56,13): error C2065: m3: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(57,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "m1"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(57,14): error C2065: mov: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(57,18): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "n"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(58,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "m3"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(59,9): error C2065: mov: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(59,13): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "k"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(59,16): error C2065: eax: необъявленный идентификатор
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(61,5): error C2143: синтаксическая ошибка: отсутствие ";" перед "}"
+D:\WorkDir\labs-idddol\ConsoleApplication13\ConsoleApplication13\ConsoleApplication13.cpp(61,5): fatal  error C1003: число ошибок превышает 100; остановка компиляции

@@ -1,0 +1,3 @@
+﻿  ConsoleApplication5.cpp
+D:\WorkDir\labs-idddol\ConsoleApplication5\ConsoleApplication5\ConsoleApplication5.cpp(26): warning C4715: anscheck: значение возвращается не при всех путях выполнения
+  ConsoleApplication5.vcxproj -> D:\WorkDir\labs-idddol\ConsoleApplication5\x64\Debug\ConsoleApplication5.exe

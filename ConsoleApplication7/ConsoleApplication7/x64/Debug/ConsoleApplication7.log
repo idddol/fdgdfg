@@ -1,0 +1,5 @@
+﻿  ConsoleApplication7.cpp
+D:\WorkDir\labs-idddol\ConsoleApplication7\ConsoleApplication7\ConsoleApplication7.cpp(305,34): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+D:\WorkDir\labs-idddol\ConsoleApplication7\ConsoleApplication7\ConsoleApplication7.cpp(139): warning C4715: vibor: значение возвращается не при всех путях выполнения
+D:\WorkDir\labs-idddol\ConsoleApplication7\ConsoleApplication7\ConsoleApplication7.cpp(190): warning C4715: anscheck: значение возвращается не при всех путях выполнения
+LINK : fatal error LNK1168: не удается открыть D:\WorkDir\labs-idddol\ConsoleApplication7\x64\Debug\ConsoleApplication7.exe для записи

@@ -1,0 +1,3 @@
+﻿  ConsoleApplication3.cpp
+D:\WorkDir\labs-idddol\ConsoleApplication3\ConsoleApplication3\ConsoleApplication3.cpp(133): warning C4715: wantTocontinue: значение возвращается не при всех путях выполнения
+LINK : fatal error LNK1168: не удается открыть D:\WorkDir\labs-idddol\ConsoleApplication3\x64\Debug\ConsoleApplication3.exe для записи
