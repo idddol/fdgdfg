@@ -1,0 +1,34 @@
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<div>
+    <div class = "text-center">
+        <label>Имя</label>
+        <input name="name" [(ngModel)]="name" (ngModelChange)="onNameChange()"/>
+    </div>
+    <div class = "text-center">
+        <label>Фамилия</label>
+        <input name="surname" [(ngModel)]="surname"/>
+    </div>
+    <div class = "text-center">
+        <label>Возраст</label>
+        <input type="number" name="age" [(ngModel)]="age"/>
+    </div>
+    <div class = "text-center">
+        <button type="button" class="btn btn-primary justify-content-center">Добавить</button>
+    </div>
+</div>
+<div>
+    <h3 class = "text-center">Пользователи</h3>
+    <ul>
+        <li *ngFor="let user of users"> {{user.name}} {{user.surname}}  {{user.age}}</li>
+    </ul>
+</div>
+
+
+<div>
+    <h3 class = "text-center">Студенты</h3>
+    <ul>
+        <li *ngFor="let student of students"> {{student.name}} {{student.surname}}  {{student.group}}</li>
+    </ul>
+</div>

@@ -1,0 +1,21 @@
+<div>
+  <h3 class = "text-center">Навигационная панель</h3>
+  <div>
+    <ul class="nav nav-pills nav-fill">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Страница 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/page2">Страница 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/page3">Страница 3</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['show-name', 'Дэвид Даниель Де Лео']">Покажи своё имя</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,31 @@
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <div class = "text-center">
+        <label>Имя</label>
+        <input name="userName" formControlName="userName" />
+    </div>
+    <div *ngIf="myForm.controls['userName'].invalid && myForm.controls['userName'].touched">
+        Не указано Имя!
+    </div>
+
+    <div class = "text-center">
+        <label>Фамилия</label>
+        <input name="userSurname" formControlName="userSurname" />
+    </div>
+    <div class = "text-center" *ngIf="myForm.controls['userSurname'].invalid && myForm.controls['userSurname'].touched">
+        Не указана Фамилия!
+    </div>
+    <div class="d-grid gap-2">
+        <button class="btn btn-primary justify-content-center" type="submit" [disabled]="myForm.invalid">Отправить!</button>
+    </div>
+    
+</form>
+
+<div>
+    <h3 class = "text-center">Пользователи</h3>
+    <ul>
+        <li class = "text-center" *ngFor="let user of users"> {{user.userSurname}} {{user.userName}}</li>
+    </ul>
+</div>
